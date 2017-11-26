@@ -1,0 +1,4 @@
+/home/charlie/temp/1.jpg	欢1a
+/home/charlie/temp/2.jpg	迎2b
+/home/charlie/temp/3.jpg	光3c
+/home/charlie/temp/4.jpg	临4d
