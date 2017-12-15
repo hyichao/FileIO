@@ -64,7 +64,7 @@ def write_lines(filename, lines):
 def write_dict(filename, dicts):
     ''' write sorted dict '''
     outlines = []
-    for key, value in sorted(dicts.iteritems(), key=lambda (k,v): (v,k)):
+    for key, value in sorted(dicts.iteritems(), key=lambda (k,v): (v,k), reverse=True):
         outline = key.encode('utf8')+' : '+str(value)+'\n'
         outlines.append(outline)
     write_lines(filename, outlines)

@@ -2,3 +2,7 @@
 /home/charlie/temp/2.jpg	迎2b
 /home/charlie/temp/3.jpg	光3c
 /home/charlie/temp/4.jpg	临4d
+/home/charlie/temp/11.jpg	欢迎
+/home/charlie/temp/22.jpg	欢迎光临
+/home/charlie/temp/33.jpg	欢迎 abcd 光临
+/home/charlie/temp/44.jpg	欢迎 光临
