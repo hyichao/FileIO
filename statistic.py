@@ -15,6 +15,7 @@ import jieba
 import utf8_io
 
 def is_chinese(label):
+    ''' as name telss, acccoding to chinese unicode range '''
     cncount = 0
     encount = 0
     for ele in label:

@@ -1,8 +1,5 @@
-/home/charlie/temp/1.jpg	欢1a
-/home/charlie/temp/2.jpg	迎2b
-/home/charlie/temp/3.jpg	光3c
-/home/charlie/temp/4.jpg	临4d
-/home/charlie/temp/11.jpg	欢迎
-/home/charlie/temp/22.jpg	欢迎光临
-/home/charlie/temp/33.jpg	欢迎 abcd 光临
-/home/charlie/temp/44.jpg	欢迎 光临
+/home/charlie/FileIO/test/synthetic-data/2017-12-26_42_47.jpg	苜偷野嘟径鲐空忪鲒荦蕙啁蛊鹜韬登
+/home/charlie/FileIO/test/synthetic-data/2017-12-26_26_56.jpg	獒氽笨貌珀递奥岫思舛绺孺悉陲父渣
+/home/charlie/FileIO/test/synthetic-data/2017-12-26_49_76.jpg	铱庄帚蜡锶鲵筲钮菘亥蜣歹诖领网见
+/home/charlie/FileIO/test/synthetic-data/2017-12-26_63_87.jpg	恪哭囫锱箅贮禄粉泖穆辉仙局葙腰炊
+/home/charlie/FileIO/test/synthetic-data/2017-12-26_46_101.jpg	泮蒽惩力稼陆稽腕曰鲻苁锩衄耦氓目

@@ -20,10 +20,17 @@ or the following, to train a CNN-RNN network for scene text recognition
 While using utf8_io to read in lines, using codes as follows
 ```
 import utf8_io
-lines = utf8_io.read_lines('test.txt')
+lines = utf8_io.read_lines('test/test-utf8.txt')
+paths, labels = utf8_io.read_sublines('test/test-utf8.txt')
 ```
 
 ***FYI, using \t to sepearte path and label, since label might contain a sementic space***
 
 ### image_io
+TODO
+
+### file_io
+TODO
+
+### statistic
 TODO

@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 '''
 Read UTF8 encoded file
 File List or Charset
@@ -19,9 +21,9 @@ def read_charset(filename):
         charset = {}
         for idx, ele in enumerate(content):
             charset[ele] = idx
-        print str(len(charset))+' classes without end-line symbol'
-        print content[0], charset[content[0]]
-        print content[-1], charset[content[-1]]
+        print '[utf8_io]', str(len(charset))+' classes without end-line symbol'
+        print '[utf8_io]', content[0], charset[content[0]]
+        print '[utf8_io]', content[-1], charset[content[-1]]
         return charset
 
 def read_lines(filename):
@@ -44,14 +46,13 @@ def read_sublines(filename):
         words = line.strip('\n').split('\t')
         for idx in xrange(group_num):
             group_lines[idx].append(words[idx])
-    # print out
-    print 'line number: '+str(len(group_lines))
-    print 'seperate into '+str(group_num)
+    
+    print '[utf8_io]', 'split to '+ str(len(group_lines)) + ' groups by \\t.'
     for idx in xrange(group_num):
-        print 'subline number: '+str(len(group_lines[idx]))
-        print group_lines[idx]
-        print len(group_lines[idx][0])
-        print group_lines[idx][0].encode('utf8')
+        print '[utf8_io]', str(idx)+' th group.'
+        print '[utf8_io]', 'subline number: '+str(len(group_lines[idx]))
+        # print '[utf8_io]', group_lines[idx]
+        print '[utf8_io]', 'i.e.', group_lines[idx][0].encode('utf8')
 
     return group_lines
 
@@ -71,19 +72,19 @@ def write_dict(filename, dicts):
 
 def split_to_files(filename, folder, subnum):
     '''Read multiple lines and split to sub files'''
-    print 'split to the following files: '
+    print '[utf8_io]', 'split to the following files: '
     partfiles = []
     for partid in xrange(subnum):
         partpath = os.path.join(folder, 'part_{}.txt'.format(partid))
         partfile = open(partpath,'w')
         partfiles.append(partfile)
-        print partpath
+        print '[utf8_io]', partpath
 
     lines = read_lines(filename)
     for index, line in enumerate(lines):
         partid = index % subnum
         partfiles[partid].write(line)
-    print 'split done.'
+    print '[utf8_io]', 'split done.'
 
 def merge_from_files(folder, filename, subnum):
     '''Read all sub files and merge into one'''
